@@ -1,0 +1,206 @@
+/* base elements style */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f7f7f7;
+	font-family: 'Open sans', sans-serif;
+	line-height: 1.6;
+	color: grey;
+}
+ main h2 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 21px 0;
+	font-size: 1.2em;
+	color: #03a5fc;
+}
+
+span {
+	font-weight: bold;
+}
+
+img {
+	max-width: 100%;
+}
+p,
+h3 {
+	text-align: center;
+}
+h1,
+h2,
+h3,
+span,
+.name-2 {
+	color: black;
+}
+ .main-nav a:hover {
+	color: #03a5fc;
+	text-decoration: underline;
+}
+/* navigation elements */
+
+
+.name {
+	font-family: 'Indie Flower';
+	text-align: center;
+
+}
+.main-nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	padding: 10px;
+	font-weight: bolder;
+	display: block;
+	text-align: center;
+	background-color: white;
+	margin-top: 7px;
+}
+.main-nav ul {
+	list-style-type : none;
+	padding-left: 0px;
+}
+
+
+/* layout containers */ 
+.portfolio-section {
+	background-color: white;
+	padding: 40px 0;
+}
+
+.img-portfolio img {
+	width: 100%;
+}
+.feat-img {
+    width: 60%;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+
+
+
+/* footer elements */
+.main {
+	border-bottom: 1px solid lightgrey;
+	}
+
+.name-2 {
+	float: left;
+	font-size: 1em;
+	font-family:'Indie Flower';
+}
+
+.main-footer nav {
+	display: none;
+}
+.main-footer a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+.main-footer ul {
+	list-style-type: none;
+}
+
+.back-top {
+	float: right;
+	margin: 16px;
+	display: block;
+	text-transform: uppercase;
+}
+
+
+/* mediaqueries */
+
+@media (min-width: 768px) {
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+/* nav elements */
+	.main-nav {
+		width: 95%;
+		text-align: center;
+	}
+	.main-nav a {
+		display: inline-block;
+		background-color: initial;
+	}
+/* featuring image and portfolio section */
+	.feat-img {
+   		width: 30%;
+    	float: right;
+    	margin-left: 20px;
+    	padding-top: 0;
+    	margin-bottom: 40px;
+	}
+	.img-portfolio  {
+		width: 45%;
+		float:left ;
+		padding: 10px;
+		margin-left: 23px;
+	}
+	.portfolio-img p {
+		text-align: justify;
+	}
+
+	.contact {
+		padding: 30px;
+	}
+	
+	
+/* footer elements */
+	.main-footer nav {
+		display: block;
+		float: right;
+	}
+	.back-top {
+		display: none;
+	}
+	.clearfix::after {
+		content:"";
+		display :table;
+		clear: both;
+	}
+}
+
+
+
+@media (min-width: 1024px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+/* header elements */
+	.name {
+		float: left;
+	}
+	.main-nav {
+		width: 35%;
+		float: right;
+	}
+/* featuring image and portfolio section */
+	.feat-img {
+		width: 30%;
+		float: right;
+	}
+	.img-portfolio  {
+		width: 29%;
+		float:left ;
+		padding: 0;
+		margin-left: 38px;
+	}
+
+	.clearfix::after {
+		content:"";
+		display :table;
+		clear: both;
+	}
+
+
+}
